@@ -13,6 +13,8 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "BROWSER='Firefox Nightly' react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
