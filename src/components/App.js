@@ -38,10 +38,13 @@ class App extends Component {
       <>
         <div className="app">
           <ul className="foods">
-            {Object.keys(this.state.foods).map(key => (
-              <Food key={key} details={this.state.foods[key]} />
-            ))}
+            <div className="itemContainer">
+              {Object.keys(this.state.foods).map(key => (
+                <Food key={key} details={this.state.foods[key]} />
+              ))}
+            </div>
           </ul>
+
           <section className="admin">
             <Button loadFoods={this.loadFoods} />
             <Inventory

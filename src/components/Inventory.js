@@ -5,7 +5,7 @@ class Inventory extends Component {
   render() {
     return (
       <div className="inventory">
-        <h2>Foods Inventory</h2>
+        <h2>Store Inventory</h2>
         {Object.keys(this.props.foods).map(key => (
           <EditSignForm
             key={key}
